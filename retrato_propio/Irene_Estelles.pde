@@ -1,4 +1,6 @@
-void irene_estelles (){ 
+void irene_estelles (float posx, float posy){ 
+  push();
+  translate(posx,posy);
  //forma de la cara
   line(m*2,m*5,m*4,m*3);
   line(m*4,m*3,m*8,m*3);
@@ -37,6 +39,6 @@ void irene_estelles (){
   //ojos
   ellipse(m*4,m*7,m-20,m-20);
   ellipse(m*7,m*7,m-20,m-20);
- 
+  pop();
  
 }
